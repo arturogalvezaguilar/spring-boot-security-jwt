@@ -25,4 +25,10 @@ public class BaseWebResponse<T> {
                 .errorCode(errorCode)
                 .build();
     }
+
+    public static BaseWebResponse error(  ErrorCode errorCode , String message  ) {
+        return BaseWebResponse.builder()
+                .errorCode(errorCode)
+                .build();
+    }
 }

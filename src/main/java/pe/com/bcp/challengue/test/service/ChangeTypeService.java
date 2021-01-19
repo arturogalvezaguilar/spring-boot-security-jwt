@@ -10,5 +10,5 @@ import java.math.BigDecimal;
 public interface ChangeTypeService {
     public Single<ChangeTypeResponse> getAmountConverted(String currencySource , String currencyDestination,
                                                          BigDecimal amount);
-    Single<String> updateChangeType(ChangeTypeRequest addAuthorRequest);
+    Single<Boolean> updateChangeType(ChangeTypeRequest addAuthorRequest);
 }
